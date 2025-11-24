@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/astro/Navigation.astro';
+import Hero from '../components/astro/Hero.astro';
+import ProblemSection from '../components/astro/ProblemSection.astro';
+import CPAISection from '../components/astro/CPAISection.astro';
+import WhoWeServe from '../components/astro/WhoWeServe.astro';
+import TestimonialsAndPricing from '../components/astro/TestimonialsAndPricing.astro';
+import ContactCTA from '../components/astro/ContactCTA.astro';
+import Footer from '../components/astro/Footer.astro';
+import ScrollAnimations from '../components/react/ScrollAnimations';
+---
+
+<BaseLayout>
+    <Navigation />
+    <Hero />
+    <ProblemSection />
+    <CPAISection />
+    <WhoWeServe />
+    <TestimonialsAndPricing />
+    <ContactCTA />
+    <Footer />
+    
+    <!-- Initialize scroll animations -->
+    <ScrollAnimations client:load />
+</BaseLayout>
